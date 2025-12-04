@@ -2,12 +2,11 @@
 ![OS](https://img.shields.io/badge/OS-Windows%2010%2F11-green)
 ![License](https://img.shields.io/badge/license-MIT-orange)
 
-![MultiBlox Demo](https://cdn.discordapp.com/attachments/1437646588859383889/1445961852021379112/pythonw_oXiRjsSH7o.png?ex=6932406a&is=6930eeea&hm=391f1578e5baaee9132426268517d80fecf27a04b2839dcf267d61c87144c538)
 # MultiBlox
 This Python-based tool makes multi-accounting on Roblox simple, stable, and fully automated. Once the program is running, users can open Roblox from any browser and log into different accounts without conflicts or forced logouts. The program takes care of session isolation behind the scenes, allowing seamless multi-session gameplay without modifying Roblox files or requiring complex setups.
 
 Designed for convenience and accessibility, it works instantly on any windows machine, no configuration, no patching, and no browser extensions required. Just start the program, open your browsers, and enjoy as many Roblox accounts as you need running at the same time.
-
+![MultiBlox Demo](https://cdn.discordapp.com/attachments/1437646588859383889/1445961852021379112/pythonw_oXiRjsSH7o.png?ex=6932406a&is=6930eeea&hm=391f1578e5baaee9132426268517d80fecf27a04b2839dcf267d61c87144c538)
 ---
 
 ## 📋 Features
