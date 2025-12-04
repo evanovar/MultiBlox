@@ -74,12 +74,13 @@ Roblox locks certain handles to prevent multiple sessions. MultiBlox uses handle
 4. Repeat in another browser or private window for additional accounts  
 5. MultiBlox automatically handles session isolation
 
+➡️ **You can open as many Roblox sessions as you want**, without logging out other accounts.
+---
+
 ---
 ## Star this repository
 
 Please star this repository to support me :)
-
-➡️ **You can open as many Roblox sessions as you want**, without logging out other accounts.
 
 ---
 
