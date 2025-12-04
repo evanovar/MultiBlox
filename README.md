@@ -2,3 +2,68 @@
 This Python-based tool makes multi-accounting on Roblox simple, stable, and fully automated. Once the program is running, users can open Roblox from any browser and log into different accounts without conflicts or forced logouts. The program takes care of session isolation behind the scenes, allowing seamless multi-session gameplay without modifying Roblox files or requiring complex setups.
 
 Designed for convenience and accessibility, it works instantly on any windows machine, no configuration, no patching, and no browser extensions required. Just start the program, open your browsers, and enjoy as many Roblox accounts as you need running at the same time.
+
+---
+
+## 📋 Features
+
+- Open **multiple Roblox sessions** without conflicts.  
+- Supports **any modern browser** (Chrome, Edge, Firefox, Opera, etc.).  
+- No modifications to Roblox files required.  
+- Built with **Python 3.9** for stability and reliability.  
+- Uses **handle64.exe** (Microsoft Sysinternals) safely to manage Roblox session handles.  
+- Minimal setup: just run `INSTALL.bat` and `START.bat`.  
+
+---
+
+## ✅ Requirements
+
+- **Python 3.9+** *(Recommended: Python 3.9)*  
+- Windows 10/11  
+- Administrator privileges *(required for Roblox handle management)*  
+
+---
+
+## 🚀 Installation
+
+1. **Install dependencies**  
+   Run: ```INSTALL.bat```
+
+This will automatically install all required Python modules.
+
+2. **Start MultiBlox as Administrator**  
+Run: ```START.bat```
+
+This ensures MultiBlox has the necessary permissions to manage Roblox sessions.
+
+---
+
+## 🔒 About `handle64.exe` (Safe & Official)
+
+MultiBlox uses **handle64.exe**, a tool from the **Microsoft Sysinternals Suite**, to safely interact with Roblox process handles.
+
+- **Official Microsoft page:**  
+[https://learn.microsoft.com/en-us/sysinternals/downloads/handle](https://learn.microsoft.com/en-us/sysinternals/downloads/handle)
+
+- **Purpose:**  
+`handle64.exe` lists and manages open system handles.
+
+- **Why MultiBlox uses it:**  
+Roblox locks certain handles to prevent multiple sessions. MultiBlox uses handle64.exe to detect and release these locks, allowing unlimited sessions.
+
+**Important:** `handle64.exe` is **safe, legitimate, and maintained by Microsoft**.
+
+---
+
+## 🎮 How to Use MultiBlox
+
+1. Open MultiBlox using `Start.bat`  
+2. Open any browser (Chrome, Edge, Firefox, Opera, etc.)  
+3. Log into a Roblox account and press **Play**  
+4. Repeat in another browser or private window for additional accounts  
+5. MultiBlox automatically handles session isolation
+
+➡️ **You can open as many Roblox sessions as you want**, without logging out other accounts.
+
+---
+
