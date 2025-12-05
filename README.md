@@ -1,8 +1,7 @@
 ![Python](https://img.shields.io/badge/python-3.9+-blue)
 ![OS](https://img.shields.io/badge/OS-Windows%2010%2F11-green)
 ![License](https://img.shields.io/badge/license-MIT-orange)
-
-Total Release Downloads : ![GitHub all releases](https://img.shields.io/github/downloads/unknownperson-vos/MultiBlox/total)
+![GitHub all releases](https://img.shields.io/github/downloads/unknownperson-vos/MultiBlox/total)
 
 [![Download](https://img.shields.io/badge/Download-Release-blue?style=for-the-badge&logo=github)](https://github.com/unknownperson-vos/MultiBlox/releases/download/multiblox/MultiBlox.rar)
 
