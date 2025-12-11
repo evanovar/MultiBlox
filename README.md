@@ -29,12 +29,32 @@ Link : https://discord.gg/tMtdpUSrdM
 
 ## 📋 Features
 
-- Open **multiple Roblox sessions** without conflicts.  
-- Supports **any modern browser** (Chrome, Edge, Firefox, Opera, etc.).  
-- No modifications to Roblox files required.  
-- Built with **Python 3.9** for stability and reliability.  
-- Uses **handle64.exe** (Microsoft Sysinternals) safely to manage Roblox session handles.  
-- Minimal setup: just run `INSTALL.bat` and `START.bat`.  
+- ✅ **Real-Time Instance Detection**  
+  Automatically detects running `RobloxPlayerBeta.exe` processes and tracks active instances.  
+
+- ✅ **Singleton Event Handle Management**  
+  Uses `handle64.exe` from Sysinternals to bypass Roblox’s singleton lock, allowing multiple instances to run simultaneously.  
+  - Employs **strong regex detection** and multiple fallback methods to reliably identify the correct handle.  
+  - Automatically closes `ROBLOX_singletonEvent` handles to prevent instance conflicts.  
+  - Retries handle detection up to 5 times for maximum reliability.  
+
+- ✅ **Quarantine & Restore Roblox Installers**  
+  Automatically quarantines old Roblox installers to prevent unwanted updates and restores them safely when needed.  
+
+- ✅ **Automatic Updater Integration**  
+  Detects and runs `Updater.py` or `Updater.exe` if present for seamless updates.  
+
+- ✅ **Low CPU Usage Monitoring**  
+  Continuously monitors Roblox processes efficiently without heavy CPU load.   
+
+- ✅ **GUI-Based Control**  
+  Clean and simple Tkinter interface with dynamic instance counter.   
+
+- ✅ **Safe Exit Handling**  
+  Restores installers and cleans up before exiting to prevent data loss.  
+
+- ✅ **Threaded Architecture**  
+  Multi-threaded for responsive GUI and background tasks without lag.
 
 ---
 
