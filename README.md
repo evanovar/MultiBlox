@@ -111,9 +111,9 @@ Roblox locks certain handles to prevent multiple sessions. MultiBlox uses handle
 ---
 
 ---
-## Star this repository
+## ⭐️ Star this repository
 
-Please star this repository to support me :)
+Please star this repository to support me, it takes 2 seconds 😊
 
 ---
 
