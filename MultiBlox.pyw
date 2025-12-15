@@ -897,7 +897,7 @@ class MultiBlox:
         self.__save_logs.place(x=696,y=393)
         self.__force_handle_closure = Button(self.settingsgui, image=blankbu,bg='#111111',borderwidth=0, activebackground="#111111",command=self._Settings_ForceHandleClosure)
         self.__force_handle_closure.place(x=696,y=476)
-        self.__low_cpu_mode = Button(self.settingsgui, image=blankbu,bg='#111111',borderwidth=0, activebackground="#111111",command=self._Settings_ForceHandleClosure)
+        self.__low_cpu_mode = Button(self.settingsgui, image=blankbu,bg='#111111',borderwidth=0, activebackground="#111111",command=self._Settings_LOWCPUMode)
         self.__low_cpu_mode.place(x=696,y=559)
         self.__singletonEvent = Button(self.settingsgui, image=fullbu,bg='#111111',borderwidth=0, activebackground="#111111",command=self._Settings_SingletonEventBu)
         self.__singletonEvent.place(x=27,y=193)
@@ -1083,4 +1083,5 @@ if is_admin():
     MultiBlox()
     window.mainloop()
 else:
+
     messagebox.showerror("MultiBlox","Admin privileges are required to use MultiBlox. Please run START.bat")
