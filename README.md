@@ -50,7 +50,7 @@ All of this runs **locally**, without injecting code into Roblox.
 
 ---
 
-## ✨ Features (We REALLY did the most)
+## ✨ Features
 
 ### 🧩 Multi-Instance Core
 - ✅ Automatically bypasses Roblox single-instance restrictions
