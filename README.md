@@ -29,7 +29,7 @@ All of this runs **locally**, without injecting code into Roblox.
 
 ---
 
-![Demo](assets/demo.gif)
+![Demo](data/assets/demoooo.gif)
 
 ---
 
