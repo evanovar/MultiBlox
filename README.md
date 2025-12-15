@@ -33,163 +33,72 @@ Link : https://discord.gg/tMtdpUSrdM
 
 ---
 
-## 🧠 Overview
-
-Roblox normally prevents you from opening more than one client at a time using internal **mutexes and events**.  
-MultiBlox automatically detects newly launched Roblox processes, **closes the required handles**, and lets you open **as many Roblox instances as your system can handle**.
-
-On top of that, MultiBlox provides:
-- Real-time process detection
-- Roblox account identification (username, user ID, avatar)
-- Per-instance process analytics
-- Custom automation (scripts on open/close)
-- Extensive logging & debugging tools
-- A clean, modern GUI
-
-All of this runs **locally**, without injecting code into Roblox.
+![MultiBlox Demo](https://cdn.discordapp.com/attachments/1437646588859383889/1450229350933860484/python_eUQjVebckg.png?ex=6941c6d5&is=69407555&hm=4d63d7ee5dd461fbba629e22a635ff7a71362e106ca7b659f4c7169cfee45f92)
 
 ---
 
 ## ✨ Features
 
-### 🧩 Multi-Instance Core
-- ✅ Automatically bypasses Roblox single-instance restrictions
-- ✅ Closes `ROBLOX_singletonEvent` and `ROBLOX_singletonMutex`
-- ✅ Supports **custom regex-based handle detection**
-- ✅ Optional **forced handle closure** when Roblox is stubborn
-- ✅ Works with **custom Roblox bootstrappers**
-
----
-
-### 🔍 Real-Time Process Detection
-- Live detection of:
-  - New Roblox processes
-  - Closed Roblox processes
-- Automatic updates to the instance list
-- Animated activity indicator when Roblox is running
-
----
-
-### 👤 Roblox Account Detection
-- Automatically extracts **UserID** from Roblox logs
-- Fetches:
-  - Username
-  - Profile picture
-- Displays account info per PID
-- Gracefully handles rate limits & missing data
-
----
-
-### 📊 Per-Instance Process Information
-For every Roblox instance, you can view:
-- PID
-- Roblox version
-- Launch time & uptime
-- CPU usage
-- RAM usage
-- Thread count (with stability rating)
-- Handle status (Event & Mutex)
-
-All displayed in a clean dedicated window.
-
----
-
-### ⚙️ Advanced Settings Panel
-Toggle features instantly with visual feedback:
-
-- 🔁 Mutant (Mutex) Closer
-- 📦 Quarantine Roblox Installers (TEMP-based)
-- 📝 Save logs on exit
-- 💪 Force handle closure
-- 🧊 Low CPU mode (dynamic sleep scaling)
-
-All settings are saved automatically to:
-```
-data/configs/configs.json
-```
-
----
-
-### 🧪 Custom Regex Engine
-Add your own regex patterns to:
-- Detect custom `singletonEvent`
-- Detect custom `singletonMutex`
-
-Perfect for:
-- Custom Roblox builds
-- Modified clients
-- Future Roblox updates
-
----
-
-### 🤖 Automation & Custom Scripts
-Run scripts automatically:
-- 🟢 When Roblox opens
-- 🔴 When Roblox closes
-
-Supported file types:
-- `.py`
-- `.ps1`
-- `.bat`
-- `.js`
-- `.go`
-
-Perfect for:
-- Auto VPN switching
-- Account setup
-- Logging
-- Monitoring tools
-
----
-
-### 🗂 Installer Quarantine System
-- Temporarily moves `RobloxPlayerInstaller.exe` to TEMP
-- Prevents Roblox from force-updating while MultiBlox is open
-- Automatically restores installers on exit
-
----
-
-### 🧾 Advanced Logging
-- Color-coded logs:
-  - ✅ SUCCESS (green)
-  - ❌ FAILED (red)
-  - ℹ️ INFO (orange)
-- Logs can be automatically saved to: ``data/logs/``
-- Unique timestamped filenames
-
----
-
-### 🧠 Low CPU Mode
-- Dynamically reduces CPU usage when idle
-- Ideal for long-running sessions
-
----
-
-### 📖 Built-in Documentation
-- Step-by-step in-app documentation
-- Beginner friendly
-- No external links required
-
----
-
-### 💬 Community & Support
-- One-click Discord invite
-- Clipboard auto-copy for invite link
-
----
-
-### 💖 Donations
-MultiBlox is **free & open-source**.  
-If you want to support development, donations are accepted in:
-
-- 🟠 Bitcoin (BTC) : bc1qq3kuqn39h4uf2kr80230gqrj8k4gf9sx5ppzuf
-- 🔵 Ethereum (ETH) : 0xb89E00a5C4d73239697470B6415f65671F4beb2D
-- 🟣 Litecoin (LTC) : LSkcr4zrSM2kF6W19F6VMi7ic2nSEAoibY
-
-Any amount is appreciated ❤️  
-The **best way to support** is:
-- ⭐ Starring this repository
-- 💬 Joining the Discord
+- ✅ Bypasses Roblox single-instance limitations automatically
+- ✅ Allows running unlimited Roblox accounts simultaneously (system dependent)
+- ✅ Automatically detects new Roblox processes in real time
+- ✅ Automatically detects when Roblox processes close
+- ✅ Works with the default Roblox launcher
+- ✅ Fully compatible with custom Roblox bootstrappers (Bloxstrap, Fishstrap, Voidstrap, etc.)
+- ✅ Closes `ROBLOX_singletonEvent` handles automatically
+- ✅ Closes `ROBLOX_singletonMutex` handles automatically
+- ✅ Supports advanced regex-based handle detection
+- ✅ Allows custom regex patterns for future Roblox updates
+- ✅ Optional forced handle closure for stubborn instances
+- ✅ No Roblox memory injection
+- ✅ No DLL injection
+- ✅ Uses process and handle management only
+- ✅ Live Roblox instance list with real-time updates
+- ✅ Displays each instance’s PID
+- ✅ Displays Roblox version per instance
+- ✅ Displays launch time and uptime per instance
+- ✅ Displays real-time CPU usage per instance
+- ✅ Displays real-time RAM usage per instance
+- ✅ Displays thread count per instance
+- ✅ Thread-based stability indicator
+- ✅ Detects handle state per instance (Event & Mutex)
+- ✅ Dedicated per-instance information window
+- ✅ Extracts UserID automatically from Roblox logs
+- ✅ Fetches Roblox username automatically
+- ✅ Fetches Roblox profile avatar automatically
+- ✅ Gracefully handles Roblox API rate limits
+- ✅ Gracefully handles missing or corrupted log files
+- ✅ Built-in low CPU usage mode
+- ✅ Dynamic sleep scaling when idle
+- ✅ Designed for long-running sessions
+- ✅ Advanced settings panel with instant toggles
+- ✅ Mutex closer toggle
+- ✅ Installer quarantine toggle
+- ✅ Force handle closure toggle
+- ✅ Save logs on exit toggle
+- ✅ Low CPU mode toggle
+- ✅ Automatically saves settings to JSON
+- ✅ Persistent configuration storage
+- ✅ Installer quarantine system to prevent forced Roblox updates
+- ✅ Temporarily moves Roblox installers to a safe TEMP location
+- ✅ Automatically restores installers on exit
+- ✅ Custom script execution on Roblox launch
+- ✅ Custom script execution on Roblox close
+- ✅ Supports `.py`, `.ps1`, `.bat`, `.js`, `.go` scripts
+- ✅ Perfect for automation workflows
+- ✅ Integrated logging system
+- ✅ Color-coded logs (success, info, error)
+- ✅ Timestamped log files
+- ✅ Optional automatic log saving
+- ✅ Clean and modern GUI
+- ✅ Animated activity indicators
+- ✅ Beginner-friendly interface
+- ✅ Built-in documentation
+- ✅ One-click Discord invite copy
+- ✅ Fully local execution (no external services required)
+- ✅ Open-source and transparent
+- ✅ Designed for stability and safety
+- ✅ Educational and personal-use focused
 
 ---
 
@@ -238,10 +147,6 @@ Must be located in:
 - Uses process & handle management only
 
 - Designed to be as safe and stable as possible
-
----
-
-![MultiBlox Demo](https://cdn.discordapp.com/attachments/1437646588859383889/1450229350933860484/python_eUQjVebckg.png?ex=6941c6d5&is=69407555&hm=4d63d7ee5dd461fbba629e22a635ff7a71362e106ca7b659f4c7169cfee45f92)
 
 ---
 
