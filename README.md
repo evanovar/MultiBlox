@@ -229,7 +229,7 @@ Must be located in:
 
 ---
 
-##🧠 Notes
+## 🧠 Notes
 
 - No code injection
 
