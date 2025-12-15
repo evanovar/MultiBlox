@@ -19,6 +19,19 @@ MultiBlox is designed to work not only with the **default Roblox launcher**, but
 - ✅ **Voidstrap**
 - ✅ Other custom Roblox bootstrappers
 
+Roblox normally prevents you from opening more than one client at a time using internal **mutexes and events**.  
+MultiBlox automatically detects newly launched Roblox processes, **closes the required handles**, and lets you open **as many Roblox instances as your system can handle**.
+
+On top of that, MultiBlox provides:
+- Real-time process detection
+- Roblox account identification (username, user ID, avatar)
+- Per-instance process analytics
+- Custom automation (scripts on open/close)
+- Extensive logging & debugging tools
+- A clean, modern GUI
+
+All of this runs **locally**, without injecting code into Roblox.
+
 ---
 
 ![Demo](assets/demo.gif)
