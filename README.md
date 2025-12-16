@@ -50,51 +50,36 @@ Link : https://discord.gg/tMtdpUSrdM
 - ✅ Bypasses Roblox single-instance limitations automatically
 - ✅ Allows running unlimited Roblox accounts simultaneously (system dependent)
 - ✅ Automatically detects new Roblox processes in real time
-- ✅ Automatically detects when Roblox processes close
-- ✅ Works with the default Roblox launcher
+- ✅ Works with the default Roblox launcher or browsers
 - ✅ Fully compatible with custom Roblox bootstrappers (Bloxstrap, Fishstrap, Voidstrap, etc.)
 - ✅ Closes `ROBLOX_singletonEvent` handles automatically
 - ✅ Closes `ROBLOX_singletonMutex` handles automatically
 - ✅ Supports advanced regex-based handle detection
 - ✅ Allows custom regex patterns for future Roblox updates
 - ✅ Optional forced handle closure for stubborn instances
-- ✅ No Roblox memory injection
-- ✅ No DLL injection
 - ✅ Uses process and handle management only
 - ✅ Live Roblox instance list with real-time updates
-- ✅ Displays each instance’s PID
-- ✅ Displays Roblox version per instance
-- ✅ Displays launch time and uptime per instance
-- ✅ Displays real-time CPU usage per instance
-- ✅ Displays real-time RAM usage per instance
-- ✅ Displays thread count per instance
+- ✅ Displays each instance’s PID Informations
 - ✅ Thread-based stability indicator
 - ✅ Detects handle state per instance (Event & Mutex)
 - ✅ Dedicated per-instance information window
 - ✅ Extracts UserID automatically from Roblox logs
-- ✅ Fetches Roblox username automatically
-- ✅ Fetches Roblox profile avatar automatically
+- ✅ Fetches Roblox username & profile avatar automatically
 - ✅ Gracefully handles Roblox API rate limits
 - ✅ Gracefully handles missing or corrupted log files
 - ✅ Built-in low CPU usage mode
 - ✅ Dynamic sleep scaling when idle
 - ✅ Designed for long-running sessions
 - ✅ Advanced settings panel with instant toggles
-- ✅ Mutex closer toggle
-- ✅ Installer quarantine toggle
-- ✅ Force handle closure toggle
-- ✅ Save logs on exit toggle
-- ✅ Low CPU mode toggle
 - ✅ Automatically saves settings to JSON
 - ✅ Persistent configuration storage
 - ✅ Installer quarantine system to prevent forced Roblox updates
 - ✅ Temporarily moves Roblox installers to a safe TEMP location
 - ✅ Automatically restores installers on exit
-- ✅ Custom script execution on Roblox launch
-- ✅ Custom script execution on Roblox close
+- ✅ Custom script execution on Roblox launch & close
 - ✅ Supports `.py`, `.ps1`, `.bat`, `.js`, `.go` scripts
 - ✅ Perfect for automation workflows
-- ✅ Integrated logging system
+- ✅ Integrated logging system (debugger)
 - ✅ Color-coded logs (success, info, error)
 - ✅ Timestamped log files
 - ✅ Optional automatic log saving
@@ -102,7 +87,6 @@ Link : https://discord.gg/tMtdpUSrdM
 - ✅ Animated activity indicators
 - ✅ Beginner-friendly interface
 - ✅ Built-in documentation
-- ✅ One-click Discord invite copy
 - ✅ Fully local execution (no external services required)
 - ✅ Open-source and transparent
 - ✅ Designed for stability and safety
