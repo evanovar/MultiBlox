@@ -11,6 +11,9 @@ import psutil
 import ctypes
 import subprocess
 import tempfile
+import msvcrt
+import win32event
+import win32api
 from tkinter import filedialog
 from datetime import datetime
 from io import BytesIO
@@ -88,6 +91,8 @@ class MultiBlox:
         self.__Temphandlelines = []
         self.RobloxProfiles = []
         self.MutanT = []
+        self.cookie_file = None
+        self._Apply773Fix()
         window.protocol("WM_DELETE_WINDOW", self._OnClose)
         threading.Thread(target=self._DashBoard).start()
         threading.Thread(target=self._ProcessDetection).start()
@@ -108,6 +113,28 @@ class MultiBlox:
     def _Loads_Settings(self):
         with open("data/configs/configs.json", "r", encoding="utf-8") as f:
             self.__CONFIGS =  json.load(f)
+
+    def _Apply773Fix(self):
+        """so basically to avoid 773 fix you just need to lock robloxcookies.dat"""
+        """is this dangerous? not really, i've used this for months and never got banned (a lot of people used this too, roughly over 500k users)"""
+        """this method is based on the original RAM by ic3w0lf22, shoutout to him"""
+        try:
+            cookies_path = os.path.join(
+                os.getenv('LOCALAPPDATA'),
+                r'Roblox\LocalStorage\RobloxCookies.dat'
+            )
+            
+            if os.path.exists(cookies_path):
+                try:
+                    self.cookie_file = open(cookies_path, 'r+b')
+                    msvcrt.locking(self.cookie_file.fileno(), msvcrt.LK_NBLCK, os.path.getsize(cookies_path))
+                    threading.Thread(target=self._UpdateLogs, args=("[SUCCESS] Error 773 fix applied.",), daemon=True).start()
+                except OSError:
+                    threading.Thread(target=self._UpdateLogs, args=("[FAILED] Could not lock RobloxCookies.dat. It may already be locked.",), daemon=True).start()
+            else:
+                threading.Thread(target=self._UpdateLogs, args=("[INFO] Cookies file not found. 773 fix skipped.",), daemon=True).start()
+        except Exception as e:
+            threading.Thread(target=self._UpdateLogs, args=(f"[FAILED] Error applying 773 fix: {str(e)}",), daemon=True).start()
 
     def _SaveDaLogs(self):
         try:
