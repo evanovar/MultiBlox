@@ -12,8 +12,6 @@ import ctypes
 import subprocess
 import tempfile
 import msvcrt
-import win32event
-import win32api
 from tkinter import filedialog
 from datetime import datetime
 from io import BytesIO
@@ -150,6 +148,12 @@ class MultiBlox:
     def _OnClose(self):
         if self.__CONFIGS['features']['save_logs']:
             self._SaveDaLogs()
+        if self.cookie_file is not None:
+            try:
+                msvcrt.locking(self.cookie_file.fileno(), msvcrt.LK_UNLCK, os.path.getsize(self.cookie_file.name))
+                self.cookie_file.close()
+            except:
+                pass
         window.destroy()
         if self.__CONFIGS['features']['quarantine_installers']:
             self._RestoreInstallers()
